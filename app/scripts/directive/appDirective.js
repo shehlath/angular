@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('angularApp',[])
+angular.module('angularApp',['angularUtils.directives.dirPagination','ui.router','anguFixedHeaderTable'])
+
 .directive('textDirective',function(){
   return{
     require: 'ngModel',

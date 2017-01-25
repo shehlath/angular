@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/angu-fixed-header-table.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">app/</a> angu-fixed-header-table.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20.59% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>7/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20.59% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>7/34</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">﻿/**
+ * AngularJS fixed header scrollable table directive
+ * @author Jason Watmore &lt;jason@pointblankdevelopment.com.au&gt; (http://jasonwatmore.com)
+ * @version 1.2.0
+ */
+(function () {
+    angular
+        .module('anguFixedHeaderTable', [])
+        .directive('fixedHeader', fixedHeader);
+&nbsp;
+    fixedHeader.$inject = ['$timeout'];
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function fixedHeader($timeout) {</span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+            restrict: 'A',
+            link: link
+        };
+&nbsp;
+<span class="fstat-no" title="function not covered" >        function link($scope, $elem, $attrs, $ctrl) {</span>
+<span class="cstat-no" title="statement not covered" >            var elem = $elem[0];</span>
+&nbsp;
+            // wait for data to load and then transform the table
+<span class="cstat-no" title="statement not covered" >            $scope.$watch(tableDataLoaded, <span class="fstat-no" title="function not covered" >function(isTableDataLoaded) {</span></span>
+<span class="cstat-no" title="statement not covered" >                if (isTableDataLoaded) {</span>
+<span class="cstat-no" title="statement not covered" >                    transformTable();</span>
+                }
+            });
+&nbsp;
+<span class="fstat-no" title="function not covered" >            function tableDataLoaded() {</span>
+                // first cell in the tbody exists when data is loaded but doesn't have a width
+                // until after the table is transformed
+<span class="cstat-no" title="statement not covered" >                var firstCell = elem.querySelector('tbody tr:first-child td:first-child');</span>
+<span class="cstat-no" title="statement not covered" >                return firstCell &amp;&amp; !firstCell.style.width;</span>
+            }
+&nbsp;
+<span class="fstat-no" title="function not covered" >            function transformTable() {</span>
+                // reset display styles so column widths are correct when measured below
+<span class="cstat-no" title="statement not covered" >                angular.element(elem.querySelectorAll('thead, tbody, tfoot')).css('display', '');</span>
+&nbsp;
+                // wrap in $timeout to give table a chance to finish rendering
+<span class="cstat-no" title="statement not covered" >                $timeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
+                    // set widths of columns
+<span class="cstat-no" title="statement not covered" >                    angular.forEach(elem.querySelectorAll('tr:first-child th'), <span class="fstat-no" title="function not covered" >function (thElem, i) {</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                        var tdElems = elem.querySelector('tbody tr:first-child td:nth-child(' + (i + 1) + ')');</span>
+<span class="cstat-no" title="statement not covered" >                        var tfElems = elem.querySelector('tfoot tr:first-child td:nth-child(' + (i + 1) + ')');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                        var columnWidth = tdElems ? tdElems.offsetWidth : thElem.offsetWidth;</span>
+<span class="cstat-no" title="statement not covered" >                        if (tdElems) {</span>
+<span class="cstat-no" title="statement not covered" >                            tdElems.style.width = columnWidth + 'px';</span>
+                        }
+<span class="cstat-no" title="statement not covered" >                        if (thElem) {</span>
+<span class="cstat-no" title="statement not covered" >                            thElem.style.width = columnWidth + 'px';</span>
+                        }
+<span class="cstat-no" title="statement not covered" >                        if (tfElems) {</span>
+<span class="cstat-no" title="statement not covered" >                            tfElems.style.width = columnWidth + 'px';</span>
+                        }
+                    });
+&nbsp;
+                    // set css styles on thead and tbody
+<span class="cstat-no" title="statement not covered" >                    angular.element(elem.querySelectorAll('thead, tfoot')).css('display', 'block');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    angular.element(elem.querySelectorAll('tbody')).css({</span>
+                        'display': 'block',
+                        'height': $attrs.tableHeight || 'inherit',
+                        'overflow': 'auto'
+                    });
+&nbsp;
+                    // reduce width of last column by width of scrollbar
+<span class="cstat-no" title="statement not covered" >                    var tbody = elem.querySelector('tbody');</span>
+<span class="cstat-no" title="statement not covered" >                    var scrollBarWidth = tbody.offsetWidth - tbody.clientWidth;</span>
+<span class="cstat-no" title="statement not covered" >                    if (scrollBarWidth &gt; 0) {</span>
+                        // for some reason trimming the width by 2px lines everything up better
+<span class="cstat-no" title="statement not covered" >                        scrollBarWidth -= 2;</span>
+<span class="cstat-no" title="statement not covered" >                        var lastColumn = elem.querySelector('tbody tr:first-child td:last-child');</span>
+<span class="cstat-no" title="statement not covered" >                        lastColumn.style.width = (lastColumn.offsetWidth - scrollBarWidth) + 'px';</span>
+                    }
+                });
+            }
+        }
+    }
+})();</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Jan 25 2017 17:15:46 GMT+0530 (IST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

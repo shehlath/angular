@@ -1,23 +1,28 @@
+(function(){
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller:MainCtrl', function () {
 
   // load the controller's module
   beforeEach(module('angularApp'));
 
-  var MainCtrl,
+  var mainCtrl,
     scope;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope, _$http_) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
-      $scope: scope
+    mainCtrl = $controller('MainCtrl', {
+      $scope: scope,
+      $http: _$http_
       // place here mocked dependencies
     });
+    scope.$apply();
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
+  it('should be defined', function () {
+    expect(mainCtrl).toBeDefined();
   });
+
+});
 });

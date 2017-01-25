@@ -1,0 +1,39 @@
+<div ng-app="angularApp" ng-controller="MainCtrl">
+
+<form class="mck-forms">
+  <h2>Search</h2>
+  First Name: <input type="text" ng-model="obj.first_name">
+  Last Name: <input type="text" ng-model="obj.last_name">
+</form><br>
+
+
+<table class="tabless" fixed-header>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th ng-click="sort('first_name')">First Name</th>
+      <th ng-click="sort('last_name')">Last Name</th>
+      <th >Email</th>
+      <th >Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr dir-paginate="employee in employees | filter:obj | orderBy: sortKey: reverse | itemsPerPage:50">
+
+      <td>{{employee.id}}</td>
+      <td>{{employee.first_name}}</td>
+      <td>{{employee.last_name}}</td>
+      <td>{{employee.email}}</td>
+      <td>{{employee.gender}}</td>
+    </tr>
+    </tbody>
+<tfoot>
+   <tr>
+      <td id="myTable" style="text-align:center">
+        <dir-pagination-controls max-size="50" direction-links="true" boundary-links="true" ></dir-pagination-controls>
+      </td>
+    </tr>
+</tfoot>
+</table>
+
+</div>
