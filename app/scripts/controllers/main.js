@@ -7,8 +7,8 @@
 * # MainCtrl
 * Controller of the angularApp
 */
-angular.module('angularApp')
-.controller('MainCtrl', function($scope, $http) {
+angular.module('angularApp',['angularUtils.directives.dirPagination','ui.router','anguFixedHeaderTable'])
+.controller('MainCtrl',function($scope, $http) {
   $http.get('MOCK_DATA.json').then(function(result){
     $scope.employees = result.data;
   });

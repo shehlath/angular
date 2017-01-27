@@ -23,16 +23,18 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
-      'test/spec/**/*.js',
-      'app/**/*.js',
       'app/**/*.html',
+      'app/scripts/**/*.js',
+      'app/*.html',
+      'test/spec/**/*.js',
+      '*.js',
       //fixtures
-      {
-        pattern: 'test/mock/**/*.json',
-        watched: true,
-        served: true,
-        included: false
-      }
+      // {
+      //   pattern: 'test/mock/**/*.json',
+      //   watched: true,
+      //   served: true,
+      //   included: false
+      // }
     ],
 
     // web server port
